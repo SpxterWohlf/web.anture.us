@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+a:link {
+  color: #5c1cff;
+}
+a:visited {
+  color: #784de3;
+}
+.specfont[target~="cooperblackstd"] {
+  font-family: "cooper-black-std", serif;
+}
+.specfont[target~="ubuntu"] {
+  font-family: "Ubuntu", sans-serif;
+}
+.specfont[target~="exo2"] {
+  font-family: "Exo 2", sans-serif;
+}
+.specfont[target~="proxy1"] {
+  font-family: "Proxy1", serif;
+}
+@font-face {
+  font-family: "Proxy1";
+  src: url("https://cdn.glitch.com/709ece84-9353-423f-a9cb-ee93df6a76e0%2FProxy-1-Regular.ttf?v=1606026863921");
+}
+.largeTxt {
+  font-size: 175%;
+  margin-left: 5px;
+  padding: 25px;
+}
+nav {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 3;
+}
+.navicon {
+  max-width: 130px;
+  background-color: rgb(128, 128, 128, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+.apanel {
+  margin-left: 20px;
+  width: 400px;
+  padding: 5px;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+  display: none;
+  border-radius: 10px;
+  z-index: 2;
+  overflow: auto;
+  color: black;
+}
+.button {
+  border-radius: 3px;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.button:hover {
+  background-color: #555555;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.footer {
+  width: 100%;
+  background-color: #202020;
+  color: white;
+  padding: 16px;
+}
+.colorCard {
+  margin-left: 5%;
+  max-width: 50%;
+  background: linear-gradient(to bottom, #E9BC27, #BE469C, #3b77e4, #41ea56);
+  border-radius: 25px;
+  display: inline-block;
+  box-shadow: 10px 10px;
+  padding: 25px;
+}
+.colorCard[target~="iig"] {
+  max-width: 50%;
+  background: linear-gradient(to bottom right, #1a7eca, #a4cae8);
+  border-radius: 25px;
+  margin-left: 0%;
+  margin-right: 5%;
+  display: inline-block;
+  box-shadow: 10px 10px;
+  padding: 25px;
+}
+.colorCard[target~="box"] {
+  max-width: 95%;
+  margin-left: 2%;
+}
+.colorCardP {
+  border: 10px solid black;
+  border-radius: 5px;
+  padding: 2%;
+  margin-left: 1%;
+  background-color: rgb(245, 245, 245, 0.5);
+  box-shadow: 10px 10px rgb(245, 245, 245, 0.5);
+  font-weight:bold;
+  font-size:135%;
+}
+.sectionTag[target~="containTitle"] {
+  letter-spacing: 5px;
+  background-color: black;
+  color: white;
+  padding: 1%;
+  margin-bottom: 1%;
+  display: inline-block;
+}
+.sectionTag[target~="colorCardTitle"] {
+  color: black;
+  margin-left:1%;
+  background-color: rgb(192, 192, 192, 0.5);
+  font-size: 200%;
+  display: inline;
+}
+.sectionTag[target~="colorCardTitle2"] {
+  color: black;
+  font-size: 200%;
+  text-shadow: 2px -2px white;
+  padding: 1%;
+}
+.sideimg {
+  float: left;
+  margin-left: 5%;
+  box-shadow: 10px 10px;
+  border-radius: 25px;
+  max-width: 35%;
+}
+.sideimg[target~="filler"] {
+  max-width: 25%;
+  filter: brightness(135%);
+}
+.sideimg[target~="colorbox"] {
+  box-shadow: none;
+}
+.specBg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+}
+.specBg[target="gen1"] {
+  background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2F565d5b18-8ca1-400f-b0b4-6b0cc35094f4_highlandsNC1.png?v=1620027426224");
+}
+.specBg[target="gen2"] {
+  background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2Fpost1-florabama-beach.png?v=1620028018762");
+}
+.specBg[target="gen3"] {
+  background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2FIMG_0856.JPG?v=1626083155221");
+  height: 90%;
+}
+.splash {
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.splash[target="anturefi"] {
+  background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2FIMG_2002.jpg?v=1614825214949");
+}
+.logonotice {
+  position: absolute;
+  top: 30%;
+  margin-left: 2%;
+}
+.regGreyFade {
+  background-color: rgb(245, 245, 245, 0.5);
+  border-radius: 25px;
+  max-width: 95%;
+  max-height: 50%;
+  display: inline-block;
+  padding: 2px;
+}
+.antureText {
+  z-index: 1;
+  float: right;
+  transform: translate(10%, -10%);
+  margin-right: 30px;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .sideimg[target~="keep"] {
+    max-width: 65%;
+    margin-top:5%;
+  }
+  .sideimg[target~="hide"] {
+    display: none;
+  }
+  .colorCard {
+    max-width: 90%;
+  }
+  .colorCard[target~="iig"] {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sideimg[target~="keep"] {
+    max-width: 75%;
+    margin-top:7%;
+  }
+  .navicon {
+    max-width: 110px;
+  }
+  .apanel {
+    width: 325px;
+  }
+}
