@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(245, 245, 245);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bg {
+  background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2FIMG_2002.jpg?v=1614825214949");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumbnail {
+  background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2FIMG_2002.jpg?v=1614825214949");
+  height: 150%;
+  background-attachment: fixed;
+  background-position: "center top";
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.iigcontainer {
+  background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2Fpost1-florabama-beach.png?v=1620028018762");
+  background-attachment: fixed;
+  background-position: "center top";
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8px;
+}
+.colorCard {
+  margin-left: 5%;
+  margin-bottom: 5%;
+  max-width: 50%;
+}
+.colorBox {
+  margin: auto;
+  background: linear-gradient(to bottom, #E9BC27, #BE469C, #3b77e4, #41ea56);
+  border-radius: 25px;
+  box-shadow: 10px 10px;
+  padding: 25px;
+  max-width: 95%;
+}
+.menu {
+  letter-spacing: 10px;
+  color: white;
+}
+.container {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+}
+.imng {
+  max-width: 25%;
+}
+.fxBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.footer {
+  width: 100%;
+}
+.gray-box {
+  background-color: DimGray;
+  color: white;
+  padding: 16px;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.footerImg {
+  max-width: 25%;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.button {
+  border-radius: 3px;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.apanel {
+  margin-left: 20px;
+  width: 400px;
+  padding: 5px;
+  background-color: white;
+  border: solid 1px #c3c3c3;
+  display: none;
+  border-radius: 10px;
+  z-index: 11;
+  overflow: auto;
+  color: black;
+}
+.button:hover {
+  background-color: #555555;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.cooperblackfont {
+  font-family: cooper-black-std, serif;
+  font-weight: bold;
+  font-style: normal;
+}
+.ubuntufont {
+  font-family: "Ubuntu", sans-serif;
+}
+.exofont {
+  font-family: "Exo 2", sans-serif;
+}
+.proxyfont {
+  font-family: "Proxy1", Times, serif;
+}
+.proxyfontB {
+  font-family: "Proxy1", Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Proxy1";
+  src: url("https://cdn.glitch.com/709ece84-9353-423f-a9cb-ee93df6a76e0%2FProxy-1-Regular.ttf?v=1606026863921");
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 900px) {
+  .fillimage {
+    display: none;
+  }
+  .colorCard {
+    border: 1px solid red;
+    margin-left: 5%;
+    max-width: 90%;
+  }
+  .imng {
+    max-width: 85%;
+  }
+  .footerImg {
+    max-width: 50%;
+  }
+  .filledimage {
+    background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2F565d5b18-8ca1-400f-b0b4-6b0cc35094f4_highlandsNC1.png?v=1620027426224");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .filledimage2 {
+    background-image: url("https://cdn.glitch.com/565d5b18-8ca1-400f-b0b4-6b0cc35094f4%2F45A12799-E2EF-46A5-95B6-50FA398EA842.jpeg?v=1620028654365");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 600px) {
+  #navbutton {
+    width: 90px;
+  }
+  .apanel {
+    width: 325px;
+  }
+  .frontsplash {
+    position: absolute;
+    top: 40px;
+  }
+  .fxBox {
+    flex-direction: column;
+  }
+  .menu {
+    letter-spacing: 10px;
+    transform: translate(20%, 510%);
+    color: white;
+  }
+}
